@@ -1,0 +1,1058 @@
+```html
+<!DOCTYPE html>
+<html lang="en-MY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- EDIT: Page title and search/social descriptions. -->
+  <title>Kelvin Foo | Landed Properties in Teluk Intan, Langkap & Kampar</title>
+  <meta name="description" content="Find your next landed home with Kelvin Foo, Real Estate Negotiator REN63933, serving Teluk Intan, Langkap and Kampar. Estimate your home loan and arrange a consultation.">
+  <meta name="theme-color" content="#171717">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_MY">
+  <meta property="og:title" content="Kelvin Foo | Find a place to call yours">
+  <meta property="og:description" content="Personal guidance for your next landed home in Teluk Intan, Langkap and Kampar.">
+  <!-- EDIT: After publishing, add og:url, a canonical URL and an absolute HTTPS og:image URL. -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- EDIT: Keep these agent details consistent with the page and CONFIG below. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Kelvin Foo",
+    "description": "Real Estate Negotiator REN63933 specialising in landed properties in Teluk Intan, Langkap and Kampar.",
+    "telephone": "+60167258223",
+    "identifier": "REN63933",
+    "areaServed": [
+      {"@type": "Place", "name": "Teluk Intan"},
+      {"@type": "Place", "name": "Langkap"},
+      {"@type": "Place", "name": "Kampar"}
+    ],
+    "knowsAbout": ["Landed properties", "Residential property"]
+  }
+  </script>
+
+  <!-- EDIT: Keep these questions and answers consistent with the visible FAQ. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Which areas do you cover?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Kelvin Foo focuses on landed properties in Teluk Intan, Langkap and Kampar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the home loan calculator a bank quotation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. It estimates monthly repayments using your inputs and a constant interest rate. The default rate is an illustrative assumption. Approval, financing terms and actual rates are subject to bank assessment. Fees, insurance or takaful and other purchase costs are excluded."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I arrange a consultation or viewing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use a WhatsApp button or complete the enquiry form to prepare a message for Kelvin. Include your preferred area, budget and requirements. Viewings are subject to property availability and confirmation."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* EDIT: Global colours, spacing and typography. */
+    :root {
+      --ink: #171717;
+      --muted: #686868;
+      --paper: #fcfcfa;
+      --white: #fff;
+      --soft: #f1f1ed;
+      --line: #e4e4df;
+      --radius: 18px;
+      --shadow: 0 14px 44px rgb(0 0 0 / 5%);
+      --max: 1160px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 100px; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font: 15px/1.7 "Inter", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3, .brand, .number { font-family: "Poppins", sans-serif; }
+    h1, h2, h3 { font-weight: 500; }
+    h1 { font-size: clamp(42px, 6vw, 72px); line-height: 1.1; letter-spacing: -.055em; }
+    h2 { font-size: clamp(29px, 4vw, 43px); line-height: 1.22; letter-spacing: -.045em; }
+    h3 { font-size: 20px; line-height: 1.4; letter-spacing: -.025em; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+    button { cursor: pointer; }
+    img { display: block; width: 100%; height: auto; }
+    :focus-visible { outline: 3px solid #737373; outline-offset: 5px; }
+    ::selection { color: white; background: #444; }
+    [hidden] { display: none !important; }
+
+    .container { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+    .section { padding-block: 64px; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 17px;
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: .17em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ""; width: 19px; height: 1px; background: currentColor; }
+    .muted { color: var(--muted); }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      min-height: 48px;
+      padding: 13px 20px;
+      border: 1px solid var(--ink);
+      border-radius: 8px;
+      background: var(--ink);
+      color: white;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-align: center;
+      transition: transform .2s, background .2s;
+    }
+    .button:hover { background: #353535; transform: translateY(-2px); }
+    .button.secondary { background: transparent; color: var(--ink); border-color: #cececa; }
+    .button.secondary:hover { background: var(--soft); }
+    .arrow { font-size: 20px; line-height: 1; }
+    .skip {
+      position: fixed;
+      z-index: 100;
+      top: -100px;
+      left: 12px;
+      background: white;
+      padding: 12px 18px;
+      border: 1px solid;
+    }
+    .skip:focus { top: 12px; }
+
+    /* Navigation */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      background: rgb(252 252 250 / 96%);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .nav { min-height: 78px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .brand { font-size: 24px; line-height: 1.15; letter-spacing: -.055em; font-weight: 600; }
+    .brand small { display: block; font: 8px/1.8 "Inter", sans-serif; letter-spacing: .18em; }
+    .nav-links { display: none; }
+    .menu-button {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: white;
+    }
+    .menu-icon { width: 18px; height: 10px; border-block: 1.5px solid; }
+    .mobile-menu { padding: 5px 0 19px; }
+    .mobile-menu a { display: block; padding: 10px 0; font-size: 14px; }
+
+    /* Hero */
+    .hero { display: grid; gap: 34px; padding-block: 46px; align-items: center; }
+    .hero h1 span { color: #888883; }
+    .hero-copy > p { margin-top: 23px; max-width: 440px; color: var(--muted); font-size: 14px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .hero-signoff { display: flex; align-items: center; gap: 11px; margin-top: 28px; }
+    .seal {
+      width: 37px; height: 37px; display: grid; place-items: center;
+      border: 1px solid #d2d2cb; border-radius: 50%; font-size: 10px;
+    }
+    .hero-signoff strong { display: block; font-size: 11px; font-weight: 600; }
+    .hero-signoff small { display: block; color: var(--muted); font-size: 10px; }
+    .portrait {
+      position: relative; overflow: hidden; border-radius: var(--radius);
+      background: #e9e9e3; box-shadow: var(--shadow);
+    }
+    .portrait > img { aspect-ratio: 1 / 1.06; object-fit: cover; }
+    .portrait-tag {
+      position: absolute; top: 20px; left: 20px; padding: 6px 12px;
+      border: 1px solid #ffffff80; border-radius: 30px;
+      background: #ffffffe3; font-size: 9px; letter-spacing: .12em;
+    }
+    .portrait-label {
+      position: absolute; inset: auto 17px 17px;
+      display: flex; justify-content: space-between; align-items: center; gap: 10px;
+      padding: 17px 19px; background: #fffffff2; border-radius: 10px;
+    }
+    .portrait-label strong { font-size: 13px; }
+    .portrait-label small { display: block; font-size: 10px; color: var(--muted); }
+    .round-arrow {
+      display: grid; place-items: center; width: 34px; height: 34px;
+      border: 1px solid var(--line); border-radius: 50%;
+    }
+    .area-strip {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 25px;
+      padding-block: 22px; border-block: 1px solid var(--line); font-size: 11px;
+    }
+    .area-strip span:first-child { color: var(--muted); }
+
+    /* Shared sections */
+    .section-heading { margin-bottom: 28px; }
+    .section-heading > p { max-width: 355px; margin-top: 17px; color: var(--muted); font-size: 13px; }
+    .about { display: grid; gap: 27px; }
+    .about-copy > p { color: var(--muted); margin-top: 18px; font-size: 14px; }
+    .about-panel { background: var(--soft); border-radius: var(--radius); padding: 27px; }
+    .about-panel .initials { font: 500 68px/1.1 "Poppins", sans-serif; letter-spacing: -.08em; }
+    .about-panel p { margin-top: 15px; color: var(--muted); font-size: 12px; }
+    .stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 27px; }
+    .stat { border-top: 1px solid #cecec7; padding-top: 15px; }
+    .number { display: block; font-size: 30px; line-height: 1.4; }
+    .stat small { display: block; font-size: 10px; color: var(--muted); line-height: 1.5; }
+    .cards { display: grid; gap: 20px; }
+    .listing { overflow: hidden; background: white; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .listing-image { position: relative; }
+    .listing-image img { aspect-ratio: 1.55; object-fit: cover; background: var(--soft); }
+    .sample-tag {
+      position: absolute; top: 14px; left: 14px; padding: 5px 10px;
+      background: #fffffff0; border-radius: 5px; font-size: 9px; font-weight: 600;
+    }
+    .listing-body { padding: 23px; }
+    .listing-location { font-size: 10px; color: var(--muted); letter-spacing: .1em; text-transform: uppercase; }
+    .listing h3 { margin-top: 7px; }
+    .price { font: 500 26px/1.5 "Poppins", sans-serif; margin-top: 11px; letter-spacing: -.03em; }
+    .features {
+      display: flex; flex-wrap: wrap; gap: 10px; color: var(--muted);
+      font-size: 11px; margin-block: 13px 20px;
+    }
+    .features span + span::before { content: "·"; margin-right: 10px; }
+    .listing .button { width: 100%; }
+    .section-note { color: var(--muted); font-size: 11px; margin-top: 17px; }
+    .why-grid { display: grid; gap: 25px; }
+    .why-card { padding: 26px; border: 1px solid var(--line); border-radius: var(--radius); background: white; }
+    .why-number { font-size: 11px; color: var(--muted); margin-bottom: 24px; }
+    .why-card h3 { font-size: 18px; }
+    .why-card p { margin-top: 12px; color: var(--muted); font-size: 13px; }
+
+    /* Calculator */
+    .calculator {
+      padding: 29px 22px; background: #1c1c1b; color: white;
+      border-radius: var(--radius); display: grid; gap: 28px;
+    }
+    .calculator .eyebrow { color: #c5c5bb; }
+    .calculator-intro { margin-top: 17px; font-size: 13px; color: #bdbdb6; max-width: 425px; }
+    .calc-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px 12px; margin-top: 27px; }
+    label { display: block; font-size: 12px; font-weight: 500; }
+    .calculator label { color: #e0e0d8; font-size: 11px; }
+    input, textarea {
+      display: block; width: 100%; min-width: 0; min-height: 48px;
+      padding: 12px; margin-top: 7px; border: 1px solid #d4d4ce;
+      border-radius: 7px; background: white; color: var(--ink);
+      font-size: 16px; line-height: 1.5;
+    }
+    textarea { resize: vertical; min-height: 115px; }
+    .calculator input { color-scheme: dark; background: #2d2d2a; color: white; border-color: #51514a; }
+    input[aria-invalid="true"] { border-color: #b77758; }
+    .calc-error { color: #ffd1bb; font-size: 11px; min-height: 20px; margin-top: 12px; }
+    .result { padding: 24px; background: #282825; border: 1px solid #474740; border-radius: 12px; align-self: center; }
+    .result-label { font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #c6c6bc; }
+    .monthly { font: 500 clamp(30px, 5vw, 44px)/1.5 "Poppins", sans-serif; letter-spacing: -.055em; margin-top: 10px; overflow-wrap: anywhere; }
+    .per-month { color: #bdbdb3; font-size: 11px; }
+    .breakdown { margin: 23px 0; font-size: 11px; }
+    .breakdown div { display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid #45453f; padding-block: 10px; }
+    .breakdown dt { color: #bdbdb3; }
+    .breakdown dd { margin: 0; text-align: right; }
+    .result .button { width: 100%; background: #f1f1e9; border-color: #f1f1e9; color: var(--ink); }
+    .calc-note { margin-top: 15px; color: #bdbdb3; font-size: 10px; line-height: 1.7; }
+
+    /* Testimonials, FAQ and enquiry */
+    .testimonials { display: grid; gap: 19px; }
+    .testimonial { margin: 0; border: 1px solid var(--line); background: white; border-radius: var(--radius); padding: 28px; }
+    .quote-mark { font: 52px/1 Georgia, serif; color: #9b9b90; }
+    blockquote { margin: 0 0 23px; font-size: 15px; line-height: 1.85; }
+    figcaption { font-size: 11px; color: var(--muted); }
+    .placeholder-label { display: inline-block; border: 1px solid var(--line); border-radius: 20px; padding: 3px 9px; font-size: 9px; margin-bottom: 16px; color: var(--muted); }
+    .faq { max-width: 780px; margin-inline: auto; }
+    .faq .section-heading { text-align: center; }
+    .faq .eyebrow { justify-content: center; }
+    details { border-bottom: 1px solid var(--line); padding-block: 20px; }
+    summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 13px; font-weight: 500; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; font-size: 22px; font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { margin-top: 12px; font-size: 12px; color: var(--muted); }
+    .contact { background: var(--soft); border-radius: var(--radius); padding: 29px 22px; display: grid; gap: 30px; }
+    .contact-copy > p { color: var(--muted); font-size: 13px; margin-top: 18px; max-width: 380px; }
+    .contact-phone { display: inline-block; margin-top: 23px; font-size: 17px; font-weight: 600; }
+    .contact-meta { margin-top: 8px; color: var(--muted); font-size: 11px; }
+    .lead-form { display: grid; gap: 17px; }
+    .form-note, .form-status { color: var(--muted); font-size: 11px; }
+    .form-status { min-height: 19px; }
+    .footer { padding: 30px 0 110px; margin-top: 50px; border-top: 1px solid var(--line); }
+    .footer-inner { display: flex; flex-direction: column; gap: 18px; }
+    .footer p { color: var(--muted); font-size: 10px; margin-top: 8px; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 20px; font-size: 11px; }
+    .floating-wa {
+      position: fixed; z-index: 40; right: 16px;
+      bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+      box-shadow: 0 7px 28px #0003; border-color: #fff3;
+      padding: 12px 17px; min-height: 48px; border-radius: 30px;
+    }
+    .floating-wa svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    @media (min-width: 650px) {
+      .container { width: min(var(--max), calc(100% - 64px)); }
+      .section { padding-block: 84px; }
+      .hero { grid-template-columns: 1.1fr 1fr; gap: 35px; padding-block: 65px; }
+      .hero-actions .button { padding-inline: 15px; }
+      .about { grid-template-columns: 1.15fr 1fr; gap: 45px; align-items: center; }
+      .cards { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 15px; }
+      .listing-body { padding: 18px; }
+      .listing h3 { font-size: 17px; }
+      .price { font-size: 23px; }
+      .why-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .why-card { padding: 23px; }
+      .testimonials { grid-template-columns: 1fr 1fr; }
+      .calculator, .contact { padding: 38px; }
+      .section-heading.split { display: flex; align-items: flex-end; justify-content: space-between; gap: 35px; }
+      .section-heading.split > p { max-width: 290px; margin-top: 0; }
+    }
+
+    @media (min-width: 950px) {
+      .nav { min-height: 88px; }
+      .nav-links { display: flex; align-items: center; gap: 26px; font-size: 12px; }
+      .menu-button, .mobile-menu { display: none !important; }
+      .hero { gap: 70px; padding-block: 70px 58px; }
+      .hero-actions .button { padding-inline: 21px; }
+      .hero-copy > p { font-size: 15px; }
+      .hero-signoff { margin-top: 35px; }
+      .area-strip { justify-content: space-between; padding-inline: 15px; }
+      .about { gap: 90px; }
+      .about-panel { padding: 34px; }
+      .cards { gap: 22px; }
+      .listing-body { padding: 24px; }
+      .calculator { grid-template-columns: 1.15fr 1fr; gap: 60px; padding: 48px; }
+      .contact { grid-template-columns: 1fr 1fr; gap: 70px; padding: 48px; }
+      .footer-inner { flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+
+    @media (max-width: 374px) {
+      .container { width: calc(100% - 30px); }
+      h1 { font-size: 39px; }
+      .hero-actions { flex-direction: column; }
+      .calc-fields { grid-template-columns: 1fr; }
+      .result { padding: 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav">
+        <!-- EDIT: Agent brand. -->
+        <a class="brand" href="#" aria-label="Kelvin Foo home">
+          kelvin foo.
+          <small>REAL ESTATE NEGOTIATOR</small>
+        </a>
+
+        <!-- EDIT: Navigation labels and consultation message. -->
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#about">Meet Kelvin</a>
+          <a href="#properties">Properties</a>
+          <a href="#calculator">Loan calculator</a>
+          <a href="#contact" class="button">Let’s talk <span class="arrow" aria-hidden="true">↗</span></a>
+        </nav>
+
+        <button class="menu-button" id="menuButton" type="button"
+                aria-expanded="false" aria-controls="mobileMenu" aria-label="Open navigation">
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" hidden>
+        <a href="#about">Meet Kelvin</a>
+        <a href="#properties">Properties</a>
+        <a href="#calculator">Loan calculator</a>
+        <a href="#contact">Let’s talk</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <section class="hero" aria-labelledby="heroTitle">
+        <div class="hero-copy">
+          <!-- EDIT: Hero promise, supporting copy and CTA messages. -->
+          <div class="eyebrow">Local knowledge. Personal guidance.</div>
+          <h1 id="heroTitle">A place to live.<br>A space to <span>belong.</span></h1>
+          <p>Your next chapter starts with the right home. Explore landed properties in Teluk Intan, Langkap &amp; Kampar with Kelvin Foo.</p>
+
+          <div class="hero-actions">
+            <a class="button" data-wa="Hi Kelvin, I'm looking for a landed home in Teluk Intan, Langkap or Kampar. Can we discuss my requirements?"
+               href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer">
+              Find my home <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="button secondary" href="#calculator">
+              Explore my budget <span class="arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+
+          <!-- EDIT: Agent identity and REN. -->
+          <div class="hero-signoff">
+            <span class="seal" aria-hidden="true">KF</span>
+            <div>
+              <strong>Kelvin Foo · REN63933</strong>
+              <small>Real Estate Negotiator · Landed Properties</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="portrait">
+          <!-- EDIT: Replace CONFIG.headshot below with your photo URL or a data URI. -->
+          <img id="headshot" width="600" height="636" fetchpriority="high"
+               alt="Illustrated headshot placeholder — replace with Kelvin Foo’s portrait">
+          <span class="portrait-tag" id="portraitTag">YOUR PORTRAIT HERE</span>
+          <!-- EDIT: Portrait caption. -->
+          <div class="portrait-label">
+            <div><strong>Kelvin Foo</strong><small>Your local point of contact.</small></div>
+            <a class="round-arrow" href="#about" aria-label="Meet Kelvin">↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDIT: Service areas. -->
+      <div class="area-strip" aria-label="Service areas">
+        <span>ROOTED IN PERAK</span>
+        <span>Teluk Intan</span>
+        <span>Langkap</span>
+        <span>Kampar</span>
+        <span>Landed homes. Real possibilities.</span>
+      </div>
+
+      <section class="section about" id="about" aria-labelledby="aboutTitle">
+        <div class="about-copy">
+          <!-- EDIT: About copy. Avoid adding unverified claims. -->
+          <div class="eyebrow">01 / Meet your negotiator</div>
+          <h2 id="aboutTitle">Your home journey.<br>A familiar face.</h2>
+          <p>Hi, I’m Kelvin Foo, a Real Estate Negotiator specialising in landed properties across Teluk Intan, Langkap and Kampar.</p>
+          <p>Whether you’re buying your first house, making room for a growing family or exploring an investment, I’ll help you start with what matters: your goals, your budget and the way you want to live.</p>
+          <p><strong style="color:var(--ink)">Clear conversations. Thoughtful options. A personal approach.</strong></p>
+        </div>
+
+        <div class="about-panel">
+          <div class="initials" aria-hidden="true">kf.</div>
+          <!-- EDIT: Identity and factual trust statistics. -->
+          <h3>Kelvin Foo</h3>
+          <p>Real Estate Negotiator<br>REN63933</p>
+          <div class="stats">
+            <div class="stat"><span class="number">3</span><small>Local areas<br>covered</small></div>
+            <div class="stat"><span class="number">1</span><small>Focus: landed<br>properties</small></div>
+            <div class="stat"><span class="number">3</span><small>Buyer groups:<br>first-time, family, investor</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="properties" aria-labelledby="propertiesTitle">
+        <div class="section-heading split">
+          <!-- EDIT: Featured-listings heading. -->
+          <div>
+            <div class="eyebrow">02 / Room for your next chapter</div>
+            <h2 id="propertiesTitle">Find your kind of home.</h2>
+          </div>
+          <p>A little inspiration for your search. Ask Kelvin about current availability and suitable options.</p>
+        </div>
+
+        <!-- EDIT: These are DEMONSTRATION listings. Replace every detail and image
+             with verified listings before publishing as available properties.
+             Image URLs are configured in CONFIG.listingImages below. -->
+        <div class="cards">
+          <article class="listing">
+            <div class="listing-image">
+              <img data-property-image="0" width="600" height="387"
+                   loading="lazy" decoding="async"
+                   alt="Architectural placeholder illustration of a two-storey home">
+              <span class="sample-tag">SAMPLE LISTING</span>
+            </div>
+            <div class="listing-body">
+              <div class="listing-location">Teluk Intan · Illustrative</div>
+              <h3>Space for family life</h3>
+              <p class="muted" style="font-size:12px;margin-top:6px">Two-storey terrace</p>
+              <div class="price">RM 450,000</div>
+              <div class="features" aria-label="4 bedrooms, 3 bathrooms, 1800 square feet built-up">
+                <span>4 beds</span><span>3 baths</span><span>1,800 sqft*</span>
+              </div>
+              <a class="button secondary"
+                 data-wa="Hi Kelvin, I saw the illustrative RM450,000 terrace in Teluk Intan on your website. Do you have any similar available homes?"
+                 href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer">
+                Ask for similar homes <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- EDIT: Sample listing 2. -->
+          <article class="listing">
+            <div class="listing-image">
+              <img data-property-image="1" width="600" height="387"
+                   loading="lazy" decoding="async"
+                   alt="Architectural placeholder illustration of a single-storey home">
+              <span class="sample-tag">SAMPLE LISTING</span>
+            </div>
+            <div class="listing-body">
+              <div class="listing-location">Langkap · Illustrative</div>
+              <h3>A simpler everyday</h3>
+              <p class="muted" style="font-size:12px;margin-top:6px">Single-storey terrace</p>
+              <div class="price">RM 320,000</div>
+              <div class="features" aria-label="3 bedrooms, 2 bathrooms, 1400 square feet built-up">
+                <span>3 beds</span><span>2 baths</span><span>1,400 sqft*</span>
+              </div>
+              <a class="button secondary"
+                 data-wa="Hi Kelvin, I saw the illustrative RM320,000 terrace in Langkap on your website. Do you have any similar available homes?"
+                 href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer">
+                Ask for similar homes <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- EDIT: Sample listing 3. -->
+          <article class="listing">
+            <div class="listing-image">
+              <img data-property-image="2" width="600" height="387"
+                   loading="lazy" decoding="async"
+                   alt="Architectural placeholder illustration of a semi-detached home">
+              <span class="sample-tag">SAMPLE LISTING</span>
+            </div>
+            <div class="listing-body">
+              <div class="listing-location">Kampar · Illustrative</div>
+              <h3>Room to grow into</h3>
+              <p class="muted" style="font-size:12px;margin-top:6px">Two-storey semi-detached</p>
+              <div class="price">RM 680,000</div>
+              <div class="features" aria-label="4 bedrooms, 3 bathrooms, 2400 square feet built-up">
+                <span>4 beds</span><span>3 baths</span><span>2,400 sqft*</span>
+              </div>
+              <a class="button secondary"
+                 data-wa="Hi Kelvin, I saw the illustrative RM680,000 semi-detached home in Kampar on your website. Do you have any similar available homes?"
+                 href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer">
+                Ask for similar homes <span class="arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <!-- EDIT: Replace this notice only when actual listings are supplied. -->
+        <p class="section-note">Demonstration properties, prices and illustrations only; these are not advertised available units. *Sample built-up areas.</p>
+      </section>
+
+      <section class="calculator" id="calculator" aria-labelledby="calculatorTitle">
+        <div>
+          <!-- EDIT: Calculator introduction. -->
+          <div class="eyebrow">03 / Plan with confidence</div>
+          <h2 id="calculatorTitle">Your next home.<br>Let’s do the numbers.</h2>
+          <p class="calculator-intro">See an instant estimate of your monthly home loan instalment in Malaysian Ringgit. Adjust the assumptions to explore your budget.</p>
+
+          <!-- EDIT: Default calculator assumptions. These are not live market rates. -->
+          <div class="calc-fields">
+            <label for="propertyPrice">Property price (RM)
+              <input id="propertyPrice" type="number" value="450000"
+                     min="10000" max="100000000" step="any" inputmode="decimal"
+                     aria-describedby="calculatorNote">
+            </label>
+            <label for="downPayment">Down payment (%)
+              <input id="downPayment" type="number" value="10"
+                     min="0" max="100" step="any" inputmode="decimal">
+            </label>
+            <label for="interestRate">Annual interest rate (%)
+              <input id="interestRate" type="number" value="4"
+                     min="0" max="20" step="any" inputmode="decimal"
+                     aria-describedby="calculatorNote">
+            </label>
+            <label for="loanYears">Loan tenure (years)
+              <input id="loanYears" type="number" value="30"
+                     min="1" max="35" step="1" inputmode="numeric">
+            </label>
+          </div>
+          <p id="calculatorError" class="calc-error" role="status"></p>
+        </div>
+
+        <div class="result">
+          <div class="result-label">Estimated monthly instalment</div>
+          <div aria-live="polite" aria-atomic="true">
+            <div class="monthly" id="monthlyPayment">—</div>
+            <div class="per-month">per month</div>
+          </div>
+          <dl class="breakdown">
+            <div><dt>Down payment</dt><dd id="downAmount">—</dd></div>
+            <div><dt>Loan amount</dt><dd id="loanAmount">—</dd></div>
+            <div><dt>Total interest</dt><dd id="totalInterest">—</dd></div>
+            <div><dt>Total loan repayment</dt><dd id="totalRepayment">—</dd></div>
+          </dl>
+          <a id="budgetWhatsApp" class="button"
+             href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer">
+            Discuss this budget <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+          <!-- EDIT: Preserve a clear explanation of assumptions and exclusions. -->
+          <p id="calculatorNote" class="calc-note">Illustrative estimate using monthly amortisation and a constant rate. The 4% default is an editable assumption, not a live bank quote. Excludes legal fees, stamp duty, valuation, insurance/takaful and other costs. Actual financing, rates and eligibility are subject to bank assessment.</p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="whyTitle">
+        <div class="section-heading">
+          <!-- EDIT: Why-me heading and service commitments. -->
+          <div class="eyebrow">04 / A personal approach</div>
+          <h2 id="whyTitle">A clearer way home.</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card">
+            <div class="why-number">01 / LOCAL FOCUS</div>
+            <h3>Grounded in your area</h3>
+            <p>A focused search across Teluk Intan, Langkap and Kampar, shaped around where you want to live.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-number">02 / YOUR NEEDS FIRST</div>
+            <h3>More listening. Better fit.</h3>
+            <p>Your budget, family needs and plans guide the conversation, from your first enquiry to your next viewing.</p>
+          </article>
+          <article class="why-card">
+            <div class="why-number">03 / CLEAR NEXT STEPS</div>
+            <h3>Guidance along the way</h3>
+            <p>Discuss options and the buying process, with bank and legal matters referred to the relevant professionals.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="testimonialsTitle">
+        <div class="section-heading">
+          <!-- EDIT: Replace the heading and placeholders with approved client feedback. -->
+          <div class="eyebrow">05 / Client experiences</div>
+          <h2 id="testimonialsTitle">Every move has a story.</h2>
+          <p>Space reserved for real client feedback. The examples below are placeholders, not verified testimonials.</p>
+        </div>
+        <div class="testimonials">
+          <!-- EDIT: Replace with an authentic quote and approved attribution. -->
+          <figure class="testimonial">
+            <span class="placeholder-label">PLACEHOLDER · NOT A CLIENT REVIEW</span>
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>[Add a client’s own words about their first-home buying experience here.]</blockquote>
+            <figcaption>[Client name] · [First-home buyer]</figcaption>
+          </figure>
+
+          <!-- EDIT: Replace with an authentic quote and approved attribution. -->
+          <figure class="testimonial">
+            <span class="placeholder-label">PLACEHOLDER · NOT A CLIENT REVIEW</span>
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>[Add a client’s own words about finding a home for their family here.]</blockquote>
+            <figcaption>[Client name] · [Family home buyer]</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section faq" aria-labelledby="faqTitle">
+        <div class="section-heading">
+          <!-- EDIT: Update the FAQPage schema whenever these answers change. -->
+          <div class="eyebrow">A few helpful answers</div>
+          <h2 id="faqTitle">Before we say hello.</h2>
+        </div>
+        <details>
+          <summary>Which areas do you cover?</summary>
+          <p>Kelvin Foo focuses on landed properties in Teluk Intan, Langkap and Kampar.</p>
+        </details>
+        <details>
+          <summary>Is the home loan calculator a bank quotation?</summary>
+          <p>No. It estimates monthly repayments using your inputs and a constant interest rate. The default rate is an illustrative assumption. Approval, financing terms and actual rates are subject to bank assessment. Fees, insurance or takaful and other purchase costs are excluded.</p>
+        </details>
+        <details>
+          <summary>How do I arrange a consultation or viewing?</summary>
+          <p>Use a WhatsApp button or complete the enquiry form to prepare a message for Kelvin. Include your preferred area, budget and requirements. Viewings are subject to property availability and confirmation.</p>
+        </details>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contactTitle">
+        <div class="contact-copy">
+          <!-- EDIT: Consultation heading, contact number and service areas. -->
+          <div class="eyebrow">06 / Your next move starts here</div>
+          <h2 id="contactTitle">Let’s find a place<br>to call yours.</h2>
+          <p>A first house, more room for family, or your next investment. Tell me what you have in mind.</p>
+          <a class="contact-phone" href="tel:+60167258223">+60 16-725 8223</a>
+          <div class="contact-meta">Kelvin Foo · Real Estate Negotiator · REN63933</div>
+          <div class="contact-meta">Teluk Intan · Langkap · Kampar</div>
+        </div>
+
+        <form class="lead-form" id="leadForm">
+          <!-- EDIT: Form labels and placeholders. No backend or lead storage is used. -->
+          <label for="leadName">Your name
+            <input id="leadName" name="name" type="text" autocomplete="name"
+                   placeholder="How should I address you?" minlength="2" maxlength="100" required>
+          </label>
+          <label for="leadPhone">Phone number
+            <input id="leadPhone" name="phone" type="tel" autocomplete="tel"
+                   placeholder="e.g. +60 12-345 6789" maxlength="30" required
+                   aria-describedby="phoneHint">
+          </label>
+          <span id="phoneHint" class="form-note">Include your country code if you’re outside Malaysia.</span>
+          <label for="leadMessage">What are you looking for?
+            <textarea id="leadMessage" name="message" rows="4" minlength="5" maxlength="2000"
+                      placeholder="Preferred area, budget and the kind of home you have in mind…" required></textarea>
+          </label>
+          <button class="button" type="submit">Continue to WhatsApp <span class="arrow" aria-hidden="true">↗</span></button>
+          <p class="form-note">This prepares your enquiry in WhatsApp. Review it and press Send there. Your details are not stored by this page.</p>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <!-- EDIT: Footer identity. Add your agency details here if needed. -->
+        <a class="brand" href="#">kelvin foo.</a>
+        <p>Real Estate Negotiator · REN63933<br>© <span id="currentYear"></span> Kelvin Foo. All rights reserved.</p>
+      </div>
+      <!-- EDIT: Footer links and consultation message. -->
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#properties">Properties</a>
+        <a href="#calculator">Loan calculator</a>
+        <a data-wa="Hi Kelvin, I'd like to arrange a property consultation."
+           href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- EDIT: Floating WhatsApp message. -->
+  <a class="button floating-wa"
+     data-wa="Hi Kelvin, I'd like help finding a landed property. Can we arrange a consultation?"
+     href="https://wa.me/60167258223" target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with Kelvin Foo on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M9 7.5c-.5 0-1 .6-1 1.3 0 2.7 3 5.7 5.7 5.7.7 0 1.3-.5 1.3-1l-2-1-1 .7a6 6 0 0 1-2.2-2.2l.7-1-1-2Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+    </svg>
+    WhatsApp Kelvin
+  </a>
+
+  <noscript>
+    <p class="container" style="padding-block:20px">Enable JavaScript for the loan calculator and enquiry form. You can still <a href="https://wa.me/60167258223">contact Kelvin on WhatsApp</a>.</p>
+  </noscript>
+
+  <!-- EDIT: Configuration and swappable image sources.
+       Embedded SVG placeholders keep this file self-contained.
+       For real photos, use a data:image/... URI to preserve that requirement.
+       You can alternatively use HTTPS image URLs if external images are acceptable. -->
+  <script>
+    "use strict";
+
+    const CONFIG = {
+      whatsapp: "60167258223",
+      headshot: "", // Replace with your headshot data URI or HTTPS URL.
+      listingImages: [
+        "", // Teluk Intan photo data URI or HTTPS URL.
+        "", // Langkap photo data URI or HTTPS URL.
+        ""  // Kampar photo data URI or HTTPS URL.
+      ]
+    };
+
+    function svgData(markup) {
+      return "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(markup);
+    }
+
+    // EDIT: Embedded portrait placeholder artwork.
+    const portraitPlaceholder = svgData(`
+      <svg xmlns="http://www.w3.org/2000/svg" width="600" height="636" viewBox="0 0 600 636">
+        <defs>
+          <linearGradient id="bg" x2="1" y2="1">
+            <stop stop-color="#edede7"/><stop offset="1" stop-color="#c9c9c1"/>
+          </linearGradient>
+          <linearGradient id="jacket" x2="1" y2="1">
+            <stop stop-color="#44443f"/><stop offset="1" stop-color="#1d1d1b"/>
+          </linearGradient>
+        </defs>
+        <rect width="600" height="636" fill="url(#bg)"/>
+        <rect x="50" y="55" width="500" height="528" rx="240" fill="none" stroke="#ffffff70"/>
+        <path d="M60 636V531c0-111 107-162 240-162s240 51 240 162v105" fill="url(#jacket)"/>
+        <path d="m239 381 61 145 61-145-61 22Z" fill="#f3f2ec"/>
+        <path d="m244 360-38 55 53 27-28 29 69 82-29-122Z" fill="#56564e"/>
+        <path d="m356 360 38 55-53 27 28 29-69 82 29-122Z" fill="#383834"/>
+        <path d="M256 317h88v86c-29 25-59 25-88 0Z" fill="#b5b5a9"/>
+        <ellipse cx="300" cy="248" rx="91" ry="115" fill="#c5c5b9"/>
+        <path d="M211 246c-16-99 29-143 88-143 75 0 106 51 92 139l-20-52c-62 12-96-7-111-22-3 29-20 53-49 78Z" fill="#44443e"/>
+        <path d="M85 574h430" stroke="#ffffff20"/>
+        <text x="300" y="591" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#d5d5cd" letter-spacing="3">PORTRAIT PLACEHOLDER</text>
+      </svg>
+    `);
+
+    // EDIT: Embedded architectural placeholders. Replace with verified property photos.
+    function housePlaceholder(variant) {
+      const backgrounds = ["#e6e6df", "#deded6", "#e9e9e4"];
+      const secondFloor = variant !== 1
+        ? `<path d="M175 165h250v100H175Z" fill="#f4f4ed"/>
+           <path d="M163 158h274v14H163Z" fill="#fafaf5"/>
+           <path d="M194 188h84v57h-84Zm107 0h105v57H301Z" fill="#686e67"/>
+           <path d="M236 188v57m117-57v57" stroke="#c4c8bd" stroke-width="3"/>`
+        : `<path d="m145 252 157-100 158 100Z" fill="#70756b"/>
+           <path d="m145 252 157-100 158 100" fill="none" stroke="#92978c" stroke-width="10"/>`;
+
+      return svgData(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="600" height="387" viewBox="0 0 600 387">
+          <rect width="600" height="387" fill="${backgrounds[variant]}"/>
+          <circle cx="477" cy="91" r="42" fill="#f9f9f0"/>
+          <path d="M0 276q150-62 300-8t300-10v129H0Z" fill="#bdc2b5"/>
+          <path d="M60 350h480" stroke="#a1a89a" stroke-width="12"/>
+          <path d="M160 252h280v100H160Z" fill="#eeeee6"/>
+          ${secondFloor}
+          <path d="M148 247h304v15H148Z" fill="#fafaf4"/>
+          <path d="M182 277h78v75h-78Z" fill="#565f53"/>
+          <path d="M284 278h132v55H284Z" fill="#777e72"/>
+          <path d="M328 278v55m44-55v55" stroke="#d5d7cc" stroke-width="3"/>
+          <path d="m181 352-32 35h150l-40-35" fill="#d9dbcf"/>
+          <path d="M88 322V200m422 124V174" stroke="#797e70" stroke-width="8"/>
+          <ellipse cx="88" cy="205" rx="35" ry="62" fill="#939d88"/>
+          <ellipse cx="510" cy="178" rx="39" ry="73" fill="#a0aa94"/>
+          <ellipse cx="430" cy="346" rx="37" ry="12" fill="#929d85"/>
+          <text x="580" y="373" text-anchor="end" font-family="Arial,sans-serif" font-size="9" fill="#5b6255" letter-spacing="2">ARCHITECTURAL PLACEHOLDER</text>
+        </svg>
+      `);
+    }
+
+    const headshot = document.getElementById("headshot");
+    headshot.src = CONFIG.headshot || portraitPlaceholder;
+
+    if (CONFIG.headshot) {
+      headshot.alt = "Kelvin Foo, Real Estate Negotiator REN63933";
+      document.getElementById("portraitTag").textContent = "YOUR LOCAL REAL ESTATE NEGOTIATOR";
+    }
+
+    headshot.addEventListener("error", () => {
+      headshot.src = portraitPlaceholder;
+      headshot.alt = "Illustrated headshot placeholder";
+      document.getElementById("portraitTag").textContent = "YOUR PORTRAIT HERE";
+    }, { once: true });
+
+    document.querySelectorAll("[data-property-image]").forEach((image) => {
+      const index = Number(image.dataset.propertyImage);
+      const fallback = housePlaceholder(index);
+      image.src = CONFIG.listingImages[index] || fallback;
+
+      // EDIT: If you supply real photos, update the corresponding alt text in HTML.
+      image.addEventListener("error", () => {
+        image.src = fallback;
+        image.alt = "Architectural property placeholder";
+      }, { once: true });
+    });
+
+    function whatsappURL(message) {
+      return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(message);
+    }
+
+    document.querySelectorAll("[data-wa]").forEach((link) => {
+      link.href = whatsappURL(link.dataset.wa);
+    });
+
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+    // Accessible mobile navigation.
+    const menuButton = document.getElementById("menuButton");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    function closeMenu(restoreFocus = false) {
+      mobileMenu.hidden = true;
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation");
+      if (restoreFocus) menuButton.focus();
+    }
+
+    menuButton.addEventListener("click", () => {
+      const opening = mobileMenu.hidden;
+      mobileMenu.hidden = !opening;
+      menuButton.setAttribute("aria-expanded", String(opening));
+      menuButton.setAttribute("aria-label", opening ? "Close navigation" : "Open navigation");
+    });
+
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => closeMenu());
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !mobileMenu.hidden) closeMenu(true);
+    });
+
+    window.matchMedia("(min-width: 950px)").addEventListener("change", (event) => {
+      if (event.matches) closeMenu();
+    });
+
+    // Constant-rate monthly amortisation; supports 0% interest and 100% down payment.
+    function calculateLoan(price, downPercent, annualRate, years) {
+      const principal = price * (1 - downPercent / 100);
+      const months = years * 12;
+      const monthlyRate = annualRate / 1200;
+
+      const payment = principal === 0
+        ? 0
+        : monthlyRate === 0
+          ? principal / months
+          : principal * monthlyRate /
+            (-Math.expm1(-months * Math.log1p(monthlyRate)));
+
+      return {
+        principal,
+        down: price - principal,
+        payment,
+        total: payment * months,
+        interest: Math.max(0, payment * months - principal)
+      };
+    }
+
+    const money = new Intl.NumberFormat("en-MY", {
+      style: "currency",
+      currency: "MYR",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+
+    const calculatorInputs = [
+      document.getElementById("propertyPrice"),
+      document.getElementById("downPayment"),
+      document.getElementById("interestRate"),
+      document.getElementById("loanYears")
+    ];
+
+    const calculatorOutputs = {
+      payment: document.getElementById("monthlyPayment"),
+      down: document.getElementById("downAmount"),
+      principal: document.getElementById("loanAmount"),
+      interest: document.getElementById("totalInterest"),
+      total: document.getElementById("totalRepayment")
+    };
+
+    const calculatorError = document.getElementById("calculatorError");
+    const budgetWhatsApp = document.getElementById("budgetWhatsApp");
+
+    function updateCalculator() {
+      let valid = true;
+
+      calculatorInputs.forEach((input) => {
+        const inputValid = input.value.trim() !== "" &&
+          Number.isFinite(Number(input.value)) &&
+          input.validity.valid;
+
+        input.setAttribute("aria-invalid", String(!inputValid));
+        if (!inputValid) valid = false;
+      });
+
+      if (!valid) {
+        calculatorError.textContent =
+          "Use RM10,000–100,000,000, a 0–100% deposit, 0–20% rate and 1–35 whole years.";
+
+        Object.values(calculatorOutputs).forEach((output) => {
+          output.textContent = "—";
+        });
+
+        budgetWhatsApp.href = whatsappURL(
+          "Hi Kelvin, I'd like help understanding my home buying budget."
+        );
+        return;
+      }
+
+      calculatorError.textContent = "";
+
+      const [price, downPercent, rate, years] =
+        calculatorInputs.map((input) => Number(input.value));
+
+      const result = calculateLoan(price, downPercent, rate, years);
+
+      Object.entries(calculatorOutputs).forEach(([key, output]) => {
+        output.textContent = money.format(result[key]);
+      });
+
+      budgetWhatsApp.href = whatsappURL(
+        `Hi Kelvin, I'd like to discuss my home buying budget.\n\n` +
+        `Property price: ${money.format(price)}\n` +
+        `Down payment: ${downPercent}% (${money.format(result.down)})\n` +
+        `Loan amount: ${money.format(result.principal)}\n` +
+        `Assumed annual rate: ${rate}%\n` +
+        `Tenure: ${years} years\n` +
+        `Estimated monthly instalment: ${money.format(result.payment)}\n\n` +
+        `Could you help me explore suitable landed homes?`
+      );
+    }
+
+    calculatorInputs.forEach((input) => {
+      input.addEventListener("input", updateCalculator);
+    });
+
+    updateCalculator();
+
+    // Lead form: prepare a message; never claim it has been sent.
+    const leadForm = document.getElementById("leadForm");
+    const leadName = document.getElementById("leadName");
+    const leadPhone = document.getElementById("leadPhone");
+    const leadMessage = document.getElementById("leadMessage");
+    const formStatus = document.getElementById("formStatus");
+
+    leadName.addEventListener("input", () => leadName.setCustomValidity(""));
+    leadPhone.addEventListener("input", () => leadPhone.setCustomValidity(""));
+    leadMessage.addEventListener("input", () => leadMessage.setCustomValidity(""));
+
+    leadForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      formStatus.textContent = "";
+
+      const name = leadName.value.trim();
+      const phone = leadPhone.value.trim();
+      const message = leadMessage.value.trim();
+      const phoneDigits = phone.replace(/\D/g, "");
+
+      leadName.setCustomValidity(name.length >= 2 ? "" : "Please enter your name.");
+      leadMessage.setCustomValidity(
+        message.length >= 5 ? "" : "Please share a little about your requirements."
+      );
+
+      const phoneValid = /^[+()\d\s.-]+$/.test(phone) &&
+        phoneDigits.length >= 8 && phoneDigits.length <= 15;
+
+      leadPhone.setCustomValidity(
+        phoneValid ? "" : "Please enter a valid phone number with 8–15 digits."
+      );
+
+      if (!leadForm.reportValidity()) return;
+
+      const text =
+        `Hi Kelvin, I'd like a property consultation.\n\n` +
+        `Name: ${name}\nPhone: ${phone}\n\n${message}`;
+
+      // Same-tab navigation avoids popup blockers and works with WhatsApp Web/app.
+      formStatus.textContent = "Opening WhatsApp. Review your message and press Send there.";
+      window.location.assign(whatsappURL(text));
+    });
+  </script>
+</body>
+</html>
+```
